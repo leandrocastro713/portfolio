@@ -2,3 +2,36 @@
     margin:0;
     padding:0;
 }
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100vh;
+    max-width: 900px;
+    margin:0 auto;
+    background-color: rgb(52, 51, 60);
+    
+}
+header{
+    height: 90px;
+    display:flex;
+    grid-column: 1/4;
+    background-color: #3aaaff;
+    background-image: linear-gradient(90deg,black,#3aaaff), 
+                        url("./img/tecno-background.jpg");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.logo{
+    display:block;
+    width: 300px;
+    height:100%;
+}
+.menu{
+    display:flex;
+    width:80%;
+}
+.menu li{
+    display:inline-block;
+    color:rgb(211, 217, 238);
+}

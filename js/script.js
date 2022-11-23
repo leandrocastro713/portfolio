@@ -11,17 +11,18 @@ let skillPremiere = document.getElementById("premiere-skill");
 skillHtml.addEventListener("mouseenter",()=> {
     console.log('passou no skill html');
     bkgSkills.style.backgroundBlendMode="lighten";
-    bkgSkills.classList.add("skills-change-html");
-    // bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, #3aaaff) ,url('./img/html-5.png')";
+    bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, #3aaaff) ,url('./img/html-5.png')";
     console.log(bkgSkills.classList);
 })
 skillHtml.addEventListener("mouseleave",()=> {
     console.log('saiu do html');
+    bkgSkills.classList.remove("skills-change-html");
     bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, var(--v-backgroung-color))";
 })
 
 skillCss.addEventListener("mouseenter",()=> {
     console.log('passou no skill cs');
+    bkgSkills.classList.add("skills-change-html");
     bkgSkills.style.backgroundBlendMode="lighten";
     bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, #3aaaff) ,url('./img/css-3.png')";
 })
@@ -43,7 +44,7 @@ skillJs.addEventListener("mouseleave",()=> {
 skillPhotoshop.addEventListener("mouseenter",()=> {
     console.log('passou no skill html');
     bkgSkills.style.backgroundBlendMode="lighten";
-    bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, #3aaaff) ,url('./img/photoshop.jpg')";
+    bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, #3aaaff) ,url('./img/photoshop.png')";
 })
 skillPhotoshop.addEventListener("mouseleave",()=> {
     console.log('saiu do html');
@@ -52,8 +53,9 @@ skillPhotoshop.addEventListener("mouseleave",()=> {
 
 skillAfter.addEventListener("mouseenter",()=> {
     console.log('passou no after html');
-    bkgSkills.style.backgroundBlendMode="darken";
-    bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, #3aaaff), url('./img/after.jpg')";
+    bkgSkills.style.backgroundBlendMode="lighten";
+    bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, #3aaaff) ,url('./img/after.jpg')";
+    // bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, #3aaaff), url('./img/after.jpg')";
 })
 skillAfter.addEventListener("mouseleave",()=> {
     console.log('saiu do after');

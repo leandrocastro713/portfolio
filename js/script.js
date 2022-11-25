@@ -16,8 +16,9 @@ skillHtml.addEventListener("mouseenter",()=> {
 })
 skillHtml.addEventListener("mouseleave",()=> {
     console.log('saiu do html');
-    bkgSkills.classList.remove("skills-change-html");
+    bkgSkills.classList.add("skills-over");
     bkgSkills.style.backgroundImage="linear-gradient(180deg,#143752, var(--v-backgroung-color))";
+    console.log(skillHtml.classList)
 })
 
 skillCss.addEventListener("mouseenter",()=> {
